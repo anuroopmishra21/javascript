@@ -10,4 +10,5 @@ $(document).ready(function() {
     text.fontSize = 20;
     text.content=' Hello World';
     paper.view.draw();
+    console.log("hello world");
 });
