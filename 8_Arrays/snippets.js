@@ -65,3 +65,21 @@ arr.copyWithin(2,0,2); //this copies from index 0 to 2 to index 2
 //[1,3,1,3]
 arr.copyWithin(0,-3,-1); //this copies from the (last index - 3) to (last index - 1) to index 0
 //[3,1,1,3]
+// filling an array with a specific element using fill function
+//the first parameter gives the value which has to filled in the array
+//now if there are only 2 parameters then the second one tells from where to start and fills all the elements after that
+//otherwise we can also specify the index to stop filling the value
+const arr= new Array(5).fill(1); //this will initialize an array of length 5 and fill all the positions with 1
+//[1,1,1,1,1]
+arr.fill("a"); //fills with 'a'
+//["a","a","a","a","a"]
+arr.fill("b",1); //it starts filling 'b' at all the indices from 1
+//["a","b","b","b","b"]
+arr.fill("c",2,4); // fills 'c' from index 2 till 4
+//["a","b","c","c","b"]
+arr.fill(5.5,-4); //fills 5.5 on all the indices after (last index -4)
+//["a".5.5,5.5,5.5,5.5]
+arr.fill(0,-3,-1); //fills 0 after (last index - 3) to (last index - 1)
+//["a",5.5,0,0,5.5]
+
+art.sort((a,b) => (a.n > b.n) ? 1 : ((b.n > a.n) ? -1 : 0));
